@@ -1,5 +1,5 @@
 {
-  "name": "epoch-purchase-limits-express",
+  "name": "express-web-template",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,11 +10,22 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "gulp": "^3.9.1",
     "hbs": "~4.0.1",
     "knex": "^0.13.0",
     "morgan": "~1.8.1",
     "mysql": "^2.14.1",
     "nodemon": "^1.11.0",
     "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "gulp-bower": "0.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-gzip": "^1.4.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.5.0",
+    "gulp-tar": "^2.0.0",
+    "gulp-uglify": "^3.0.0"
   }
 }

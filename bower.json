@@ -1,0 +1,27 @@
+{
+  "name": "express-web-template",
+  "description": "Template for quickly starting a web app in express",
+  "main": "server/index.js",
+  "authors": [
+    "Simon Lee <oprogfrogo@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/oprogfrogo/express-web-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "6.2.0",
+    "datatables": "^1.10.15",
+    "datatables.net-zf": "^2.1.1",
+    "flatpickr": "^2.6.3",
+    "datatables.net-select": "^1.2.2",
+    "datatables.net-select-zf": "^1.2.2",
+    "foundation-icon-fonts": "*",
+    "font-awesome": "^4.7.0"
+  }
+}
