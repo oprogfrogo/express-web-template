@@ -3,10 +3,10 @@
 Skeleton for quickly getting a node app running in Express.
 
 ## Installation
-  * Install dependencies:
+  * Install dependencies using yarn (dependency management):
 
   ```bash
-  $ npm install
+  $ yarn install
   ```
 
 ## Seed test data
