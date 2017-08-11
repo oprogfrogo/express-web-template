@@ -2,6 +2,13 @@
 
 Skeleton for quickly getting a node app running in Express.
 
+## Installation
+  * Install dependencies:
+
+  ```bash
+  $ npm install
+  ```
+
 ## Seed test data
   * Bring in test seed data to quickly have data to work with. Running the seed command will import all .json files found in the seeds directory:
 
