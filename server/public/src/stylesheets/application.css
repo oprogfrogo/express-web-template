@@ -1,6 +1,25 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 10px 0;
+    box-shadow: 0 5px 5px -5px gray;
+}
+
+#main-wrapper {
+    margin: 30px auto 200px auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ddd;
+    padding: 5px 0;
+    box-shadow: 0 -5px 5px -5px gray;
+    background: #fff;
 }
 
 a {
