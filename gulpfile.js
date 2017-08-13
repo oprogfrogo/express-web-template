@@ -25,7 +25,7 @@ gulp.task('css:application', ['bower'], () => {
         'bower_components/flatpickr/dist/flatpickr.min.css',
         'bower_components/font-awesome/css/font-awesome.min.css',
         'bower_components/foundation-sites/dist/foundation.min.css',
-        'server/public/stylesheets/style.css',
+        'server/public/src/stylesheets/application.css'
     ])
     .pipe(concat('application.css'))
     .pipe(cssmin())
@@ -40,7 +40,8 @@ gulp.task('js:application', ['bower'], () => {
         'bower_components/foundation-sites/dist/foundation.js',
         'bower_components/datatables.net/js/jquery.dataTables.min.js',
         'bower_components/datatables.net-zf/js/dataTables.foundation.min.js',
-        'bower_components/flatpickr/dist/flatpickr.min.js'
+        'bower_components/flatpickr/dist/flatpickr.min.js',
+        'server/public/src/javascripts/application.js'
     ])
     .pipe(concat('application.js'))
     .pipe(uglify().on('error', function(e){
