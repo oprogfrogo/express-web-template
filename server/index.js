@@ -1,4 +1,5 @@
 const express = require('express');
+const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
@@ -26,7 +27,9 @@ db.connect(`mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.en
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
+
+app.use(expressLayouts);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

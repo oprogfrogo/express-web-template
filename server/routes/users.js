@@ -6,7 +6,7 @@ const config = require('../../config');
 const db = config.db;
 const Joi = require('joi');
 
-router.post('/', Celebrate({
+router.all('/', Celebrate({
     body: Joi.object().keys({
         first_name: Joi.string(),
         email: Joi.string()
@@ -17,7 +17,7 @@ router.post('/', Celebrate({
 
     collection.find(req.body).toArray(function(err, users) {
 
-        res.send({
+        res.render('users', {
             users
         });
     })
