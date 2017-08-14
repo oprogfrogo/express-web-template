@@ -24,10 +24,6 @@ gulp.task('bower', () => {
 gulp.task('css:application', ['bower'], () => {
 
     return gulp.src([
-        'bower_components/bootstrap/dist/css/bootstrap.min.css',
-        'bower_components/datatables/media/css/jquery.dataTables.min.css',
-        'bower_components/flatpickr/dist/flatpickr.min.css',
-        'bower_components/font-awesome/css/font-awesome.min.css',
         'server/public/src/css/application.css'
     ])
     .pipe(concat('application.css'))
@@ -38,10 +34,6 @@ gulp.task('css:application', ['bower'], () => {
 gulp.task('js:application', ['bower'], () => {
 
     return gulp.src([
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/bootstrap/dist/js/bootstrap.min.js',
-        'bower_components/datatables.net/js/jquery.dataTables.min.js',
-        'bower_components/flatpickr/dist/flatpickr.min.js',
         'server/public/src/js/application.js'
     ])
     .pipe(concat('application.js'))
@@ -107,6 +99,9 @@ gulp.task('sbadmin-minify-js', function() {
 
 // Copy vendor libraries from /bower_components into /vendor
 gulp.task('copy', function() {
+    gulp.src(['bower_components/flatpickr/dist/*.js', 'bower_components/flatpickr/dist/*.css'])
+        .pipe(gulp.dest('server/public/dist/vendor/flatpickr'))
+    
     gulp.src(['bower_components/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
         .pipe(gulp.dest('server/public/dist/vendor/bootstrap'))
 
@@ -147,15 +142,15 @@ gulp.task('copy', function() {
 
 gulp.task('default', [
     'bower',
-    'css:application',
-    'js:application',
     'images:default',
     'icons',
     'copy',
     'sbadmin-less',
     'sbadmin-minify-css',
     'sbadmin-js',
-    'sbadmin-minify-js'
+    'sbadmin-minify-js',
+    'css:application',
+    'js:application',
 ]);
 
 gulp.task('release', [
