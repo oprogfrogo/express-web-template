@@ -73,5 +73,7 @@ Skeleton for quickly getting a node app running in Express.
   
 ## Try pulling up the webpage
   
-  * Pull up http://localhost:3000 to see the index page.
+  * Pull up http://localhost:3000 to see the index page. If all is good in the world, you should see somethings like this:
+  ![alt text](server/public/src/images/example-dashboard.png "Example Dashboard Image")
+
   
