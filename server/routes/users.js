@@ -17,9 +17,7 @@ router.all('/', Celebrate({
 
     collection.find(req.body).toArray(function(err, users) {
 
-        res.render('users', {
-            users
-        });
+        res.send(users);
     })
 });
 

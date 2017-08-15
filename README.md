@@ -3,6 +3,8 @@
 Skeleton for quickly getting a node app running in Express.
 
 ## Installation
+  * Install Node JS from https://nodejs.org/en if you haven't done already.
+  
   * Install dependencies using yarn (dependency management):
 
   ```bash
